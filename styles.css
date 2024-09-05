@@ -1,0 +1,109 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #c31432;  
+background: -webkit-linear-gradient(to right, #240b36, #c31432); 
+background: linear-gradient(to right, #240b36, #c31432); 
+
+}
+
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #333;
+    text-shadow: none;
+}
+
+
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 10px 10px 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.input-group label {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: #999;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    top: -20px;
+    font-size: 12px;
+    color: #666;
+}
+
+
+button {
+    padding: 12px 24px;
+    background-color: #6a11cb;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #2575fc;
+    transform: scale(1.05);
+}
+
+
+.weather-result {
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    button {
+        max-width: 100%;
+    }
+}
